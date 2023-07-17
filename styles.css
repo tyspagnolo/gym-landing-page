@@ -1,0 +1,799 @@
+/* Reset default browser styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Karantina", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --accent: rgb(236, 121, 43);
+  --btn_hover: rgb(184, 97, 39);
+  --dark: #000000;
+  --lighter: rgb(54, 54, 54);
+  --light: white;
+}
+
+/* Header, hero container */
+.container {
+  width: 100%;
+  background: var(--dark);
+  overflow: hidden;
+}
+
+h5 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+/* NAVBAR */
+header {
+  width: 100%;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+}
+
+/* ENTIRE top navigation, icon -> nav items -> start button */
+#nav {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.logo-left {
+  display: flex;
+  align-items: center;
+  margin-left: 3em;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+  padding: 1em 4em;
+  transition: 0.3s ease;
+}
+
+/* Fixed width in order to avoid other nav items 
+shifting when font size increases on hover */
+header li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 30px;
+  margin: 0 3px;
+}
+
+/* Text takes up more than other items in nav, so special width for this one to avoid items moving again */
+
+ul a {
+  margin: 2em;
+  padding: 10px;
+  transition: 0.2s ease-in-out;
+  color: var(--light);
+}
+
+/* Vertical line seperating logo from nav links */
+.vertical-line {
+  border-left: 2px solid var(--accent);
+  height: 1em;
+  margin-left: 5em;
+}
+
+#dumbell-icon-nav {
+  width: 2.8em;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3em;
+}
+
+button {
+  color: white;
+  background: var(--accent);
+  border-style: none;
+  height: 3em;
+  padding: 0 2em;
+  transition: 0.2s ease-in-out;
+}
+
+/* Header Text right below nav */
+
+.top-header-text {
+  width: 100%;
+  background: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-header-text h2 {
+  font-size: 8vw;
+  padding: 0.3em 0;
+  color: white;
+}
+
+.hero {
+  width: 100%;
+  height: 60vh;
+  background: url(hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-right {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.work {
+  font-size: 6.5vw;
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.hero-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-left-maintext {
+  color: var(--light);
+  font-size: 12vw;
+  text-align: center;
+}
+
+.hero-left-subtext {
+  font-size: 7vw;
+  color: var(--accent);
+}
+
+.claim {
+  margin: 30px 0;
+}
+
+.claim button {
+  padding: 3vw 6vw;
+  font-size: 4vw;
+}
+
+.under-hero-bar {
+  width: 100%;
+  background: var(--dark);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 1.2em 0;
+  position: relative;
+  z-index: 2;
+}
+
+.under-hero-bar h3,
+h4 {
+  text-align: center;
+  font-weight: 100;
+}
+
+.under-hero-bar h3 {
+  font-size: 2em;
+  margin: 0 5px;
+}
+
+.under-hero-bar h4 {
+  font-size: 1.6em;
+  margin-top: 0.3em;
+  margin: 0.3em 5px 0 5px;
+}
+
+.decorated {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.classes-offered-mobile-only {
+  display: none;
+}
+
+.scroll {
+  color: var(--accent);
+}
+
+.bottom-block {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.bottom-block div {
+  background: rgb(235, 235, 235);
+  width: 500px;
+  height: auto;
+  padding: 0 0 20px 0;
+}
+
+.under-bottom-block-image {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.bottom-block-headings {
+  color: var(--light);
+  -webkit-text-stroke: 1.5px var(--accent);
+}
+
+.bottom-block-descriptions {
+  margin: 10px 30px;
+}
+
+.bottom-block-descriptions p {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.bottom-block-btn {
+  margin: 5px 0;
+}
+
+.boxing {
+  margin: 10px 5px 0 10px;
+}
+
+.kickboxing {
+  margin: 10px 5px 0 5px;
+}
+
+.mma {
+  margin: 10px 10px 0 5px;
+}
+
+.class-image {
+  height: 120px;
+  width: 100%;
+}
+
+.bottom-block img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* FOOTER BEGINS */
+
+.footer {
+  width: 100%;
+  height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-header {
+  text-align: center;
+  padding: 35px;
+}
+
+.footer-header h1 {
+  font-size: 4em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content div {
+  width: 20%;
+}
+
+.footer-content .abc img {
+  width: 40%;
+}
+
+.footer-content .news12 img {
+  width: 40%;
+}
+.footer-content .gq img {
+  width: 40%;
+}
+.footer-content .nytimes img {
+  width: 30%;
+}
+
+.footer-content h3 {
+  font-family: "Moul", cursive;
+  font-size: 2.5em;
+  padding: 40px;
+  line-height: 1em;
+}
+
+.back-to-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back-to-top img {
+  width: 3%;
+}
+
+.back-to-top button {
+  width: 100%;
+  overflow: hidden;
+  background: whitesmoke;
+}
+
+/* HOVERS */
+ul a:hover {
+  transition: 0.2s ease-in-out;
+  text-decoration: underline;
+  color: var(--accent);
+  font-size: 1.1em;
+}
+
+.logo-left img:hover {
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(105%);
+  transition: 0.2s;
+  background: var(--light);
+  color: var(--accent);
+}
+
+/* Hamburger menu */
+.ham-menu-button button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 145px;
+  background: none;
+  display: none;
+}
+
+.ham-menu-button img {
+  width: 30%;
+}
+
+/* MOBILE OPTIMIZATION */
+
+@media screen and (max-width: 480px) {
+  .ham-menu-button button {
+    display: block;
+  }
+
+  .top-header-text h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .top-header-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  header ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 55px 0 0 0;
+    background: var(--dark);
+    padding: 50px 0 7px 0;
+    transform: translateY(-320%);
+    width: 150px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+  }
+  header ul.active {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-32%);
+    transition: 0.3s ease;
+  }
+
+  ul a {
+    font-size: 0.9em;
+  }
+
+  #the-team {
+    width: 120%;
+  }
+
+  .nav-btn button {
+    display: none;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .logo-left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .logo-left img {
+    transform: scale(80%);
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    background: url(hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 15px 0 0 0;
+    /* Reset the orignal translate X */
+    transform: translateX(0%);
+  }
+
+  .hero-left-maintext h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.7em;
+  }
+
+  .hero-left-subtext {
+    width: 50vw;
+    text-align: center;
+  }
+
+  .hero-left-subtext h3 {
+    font-size: 2em;
+  }
+
+  .work {
+    font-size: 1.5em;
+  }
+
+  .hero-right {
+    transform: translateY(10%);
+    height: 45%;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+  }
+
+  .hero-right img {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .claim {
+    margin: 15px 0;
+  }
+
+  .claim button {
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    font-size: 1.6em;
+    border-radius: 5%;
+  }
+
+  .under-hero-bar {
+    padding: 1.3em 0;
+  }
+
+  .under-hero-bar h3 {
+    font-size: 1.4em;
+  }
+
+  .under-hero-bar h4 {
+    font-size: 1.2em;
+  }
+
+  .bottom-block {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-block div {
+    width: 80vw;
+    height: auto;
+  }
+
+  .kickboxing {
+    margin: 20px 0;
+  }
+
+  .classes-offered-mobile-only {
+    text-align: center;
+    color: var(--accent);
+    padding: 35px;
+    display: block;
+  }
+
+  .classes-offered-mobile-only {
+    font-size: 1.4em;
+  }
+
+  .boxing {
+    margin: 0;
+  }
+
+  .boxing,
+  .kickboxing,
+  .mma {
+    height: auto;
+    width: 100%;
+    padding: 0 0 15px 0;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    padding: 0 0 50px 0;
+  }
+
+  .footer-header {
+    font-size: 0.7em;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+    overflow-x: scroll;
+  }
+
+  .fitness-weekly h3 {
+    font-size: 0.6em;
+    text-align: center;
+    padding: 0;
+  }
+
+  .bottom-block-descriptions p {
+    font-size: 1em;
+  }
+
+  .bottom-block-descriptions {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .hero-left-maintext {
+    font-size: 4em;
+  }
+
+  .top-header-text h2 {
+    font-size: 4em;
+  }
+
+  .hero-left-subtext {
+    font-size: 5em;
+  }
+
+  .work {
+    font-size: 0.9em;
+  }
+
+  .claim button {
+    font-size: 2em;
+    padding: 40px;
+    height: auto;
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 759px) and (min-width: 480px) {
+  .under-hero-bar h3 {
+    font-size: 5vw;
+  }
+
+  .under-hero-bar h4 {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .ham-menu-button button {
+    display: block;
+  }
+
+  header ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 55px 0 0 0;
+    background: var(--dark);
+    padding: 50px 0 7px 0;
+    transform: translateY(-320%);
+    width: 150px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+  }
+
+  header ul.active {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-32%);
+    transition: 0.3s ease;
+  }
+
+  .nav-btn button {
+    display: none;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .logo-left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .logo-left img {
+    transform: scale(80%);
+  }
+}
+
+@media screen and (max-width: 1099px) and (min-width: 480px) {
+  .under-hero-bar {
+    padding: 1.3em 0;
+  }
+
+  .bottom-block div {
+    width: 450px;
+  }
+
+  .under-hero-bar h3 {
+    font-size: 1.4em;
+  }
+
+  .under-hero-bar h4 {
+    font-size: 1.2em;
+  }
+
+  .bottom-block {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kickboxing {
+    margin: 20px 0;
+  }
+
+  .classes-offered-mobile-only {
+    text-align: center;
+    color: var(--accent);
+    padding: 35px;
+    display: block;
+  }
+
+  .classes-offered-mobile-only {
+    font-size: 1.4em;
+  }
+
+  .boxing {
+    margin: 0;
+  }
+
+  .boxing,
+  .kickboxing,
+  .mma {
+    height: auto;
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    padding: 0 0 50px 0;
+  }
+
+  .footer-header {
+    font-size: 0.7em;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+    overflow-x: scroll;
+  }
+
+  .fitness-weekly h3 {
+    font-size: 0.6em;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero h1 {
+    font-size: 3em;
+  }
+
+  #nav li a {
+    font-size: 1.5em;
+  }
+}
